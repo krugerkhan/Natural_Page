@@ -16,10 +16,16 @@
     <style>
       .middle {
         background: black;
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-bottom: 30px;
+        min-width: 980px;
+        margin: 0 80px;
       }
+
+      img {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+      }
+
       li {
         list-style: none;
         text-decoration: none;
@@ -30,50 +36,16 @@
       }
       .a {
         display: flex;
-        margin-left: 80px;
+        justify-content: center;
         padding: 15px;
-      }
-
-      .one {
-        display: flex;
-        padding: 10px;
-      }
-      .two {
-        display: flex;
-        padding: 10px;
-      }
-      .three {
-        display: flex;
-        padding: 10px;
-      }
-      .four {
-        display: flex;
-        padding: 10px;
       }
 
       .b {
         display: flex;
-        margin-left: 80px;
         padding: 15px;
+        justify-content: center;
       }
 
-      .c {
-        display: flex;
-        padding: 10px;
-      }
-
-      .d {
-        display: flex;
-        padding: 10px;
-      }
-      .e {
-        display: flex;
-        padding: 10px;
-      }
-      .f {
-        display: flex;
-        padding: 10px;
-      }
       h2 {
         display: flex;
         justify-content: space-around;
@@ -89,18 +61,27 @@
       }
 
       @media (max-width: 640px) {
-        .studio {
+        body {
+          display: flex;
           flex-wrap: wrap;
+          align-items: center;
         }
-        .a {
-          flex-wrap: wrap;
-        }
-        .b {
-          flex-wrap: wrap;
+
+        h2 {
+          font-size: 1rem;
+          display: flex;
+          flex-direction: column;
         }
 
         .middle {
-          flex-wrap: wrap;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .a,
+        .b {
+          display: flex;
+          flex-direction: column;
         }
       }
     </style>
